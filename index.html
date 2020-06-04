@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kanban Board</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="manifest" href="./assets/site.webmanifest">
 </head>
+
 <body>
-  
+
   <div class="boards">
     <div class="board">
       <h3>Todo</h3>
       <div class="dropzone">
         <div class="card" draggable="true">
-          <div class="status"></div>
+          <div class="status green"></div>
           <div class="content">Desenvolver conteudo do curso de node</div>
         </div>
       </div>
@@ -22,21 +28,22 @@
       <h3>In progress</h3>
       <div class="dropzone">
         <div class="card" draggable="true">
-          <div class="status"></div>
+          <div class="status blue"></div>
           <div class="content">Drag and Drop Raiz com a API do HTML, CSS e JavaScript | Masterclass #16</div>
         </div>
       </div>
     </div>
     <div class="board">
-      <h3>Todo</h3>
+      <h3>Done</h3>
       <div class="dropzone">
         <div class="card" draggable="true">
-          <div class="status"></div>
+          <div class="status red"></div>
           <div class="content">Trabalho na lighthouse :(</div>
         </div>
       </div>
     </div>
   </div>
-
+  <script src="./script.js" defer></script>
 </body>
+
 </html>

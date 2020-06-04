@@ -11,34 +11,77 @@ html {
 
 body {
   background-color: #130f0d;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .boards {
   display: flex;
-  justify-content: space-between;
   margin: 20px;
 }
 
 .board {
+  display: flex;
+  flex-direction: column;
   background-color: #141316;
-  border: 1px solid #FD951F11;
+  border: 1px solid #fd951f11;
   border-radius: 5px;
   margin: 16px;
 }
 
 .board h3 {
   padding: 16px;
-  color: #FD951FCC;
+  color: #fd951fcc;
 }
 
 .dropzone {
+  flex: 1;
   padding: 16px;
-  min-width: 332px;
+  min-width: 300px;
   min-height: 200px;
 }
 
 .card {
   padding: 16px;
-  box-shadow: 0 2px 2px 0 #FD951FCC;
+  box-shadow: 0 2px 2px 0 #fd951fcc;
+  width: 250px;
+  margin: 25px 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #1a1a1c;
+  z-index: 10;
+}
+
+.status {
+  width: 38px;
+  height: 8px;
+  border-radius: 5px;
+  margin: 16px 0;
+}
+
+.status.green {
+  background-color: #23D2AC;
+}
+.status.blue {
+  background-color: #33ADFF;
+}
+.status.red {
+  background-color: red;
+}
+
+.hightlight {
+  background-color: #fd951f08;
+}
+
+.card, .dropzone {
+  transition: 500ms;
+}
+
+.dragIn {
+  cursor: move;
+  opacity: 0.5;
+}
+
+.over {
+  background-color: #4CD13711;
 }
